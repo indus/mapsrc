@@ -24,7 +24,7 @@ export default {
                 "line-blur": 0.5,
                 "line-color": "#ccc",
                 "line-width": {
-                    "stops": [[0,2],[6,6],[14,9],[22,18]]
+                    "stops": [[0, 2], [6, 6], [14, 9], [22, 18]]
                 }
             },
             "layout": {
@@ -40,7 +40,7 @@ export default {
             "id": "countries-fill",
             "type": "fill",
             "paint": {
-                "fill-color":"#888"
+                "fill-color": "#888"
             },
             "source": "maplibre",
             "source-layer": "countries"
@@ -51,10 +51,10 @@ export default {
             "paint": {
                 "line-color": "#999",
                 "line-width": {
-                    "stops": [[1,1],[6,2],[14,6],[22,12]]
+                    "stops": [[1, 1], [6, 2], [14, 6], [22, 12]]
                 },
                 "line-opacity": {
-                    "stops": [[3,0.5],[6,1]]
+                    "stops": [[3, 0.5], [6, 1]]
                 }
             },
             "layout": {
@@ -65,4 +65,5 @@ export default {
             "source-layer": "countries"
         }
     ]
-}
+};
+//# sourceMappingURL=mapstyle.js.map
