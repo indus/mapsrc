@@ -1,0 +1,25 @@
+{
+  "name": "@mapsrc/gpbf",
+  "version": "0.0.1",
+  "author": "Stefan Keim (indus)",
+  "main": "dist/mapsrcGPBF.umd.js",
+  "module": "dist/mapsrcGPBF.es.js",
+  "types": "dist/mapsrcGPBF.d.ts",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "tsc & vite build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@mapsrc/utils": "workspace:*",
+    "geobuf": "^3.0.2",
+    "pbf": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/geobuf": "^3.0.1",
+    "@types/pbf": "^3.0.2"
+  }
+}

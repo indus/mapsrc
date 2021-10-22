@@ -1,0 +1,17 @@
+{
+  "name": "@mapsrc/utils",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Stefan Keim (indus)",
+  "main": "dist/utils.js",
+  "module": "dist/utils.js",
+  "types": "dist/utils.d.ts",
+  "scripts": {
+    "dev": "vite build",
+    "build": "tsc & vite build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}
