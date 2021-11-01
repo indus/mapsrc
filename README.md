@@ -1,6 +1,6 @@
 # maprc
 
-`mapscr` allows the inclusion of alternative source formats in [maplibre-gl-js](https://github.com/maplibre/maplibre-gl-js) / [mapbox-gl-js](https://github.com/mapbox/mapbox-gl-js) maps. [FlatGeobuf](https://github.com/flatgeobuf/flatgeobuf), [Geobuf](https://github.com/mapbox/geobuf) and [TopoJSON](https://github.com/topojson/topojson) are supported. All formats are first converted to GeoJSON and then loaded via the existing API. The additional effort in this intermediate step can be justified by the significantly smaller file sizes during loading.
+`mapscr` allows the use of custom source formats in [maplibre-gl-js](https://github.com/maplibre/maplibre-gl-js) / [mapbox-gl-js](https://github.com/mapbox/mapbox-gl-js) maps. [FlatGeobuf](https://github.com/flatgeobuf/flatgeobuf), [Geobuf](https://github.com/mapbox/geobuf) and [TopoJSON](https://github.com/topojson/topojson) are supported. All formats are first converted to GeoJSON and then loaded via the existing API. The additional effort in this intermediate step can be justified by the significantly smaller file sizes during loading.
 
 The provided functions are not yet available on NPM because they are still experimental and subject to change.
 
