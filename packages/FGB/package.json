@@ -10,11 +10,12 @@
     "build": "tsc & vite build"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "dependencies": {
-    "@mapsrc/utils": "workspace:*",
     "flatgeobuf": "3.17"
+  },
+  "devDependencies": {
+    "@mapsrc/utils": "workspace:*"
   }
 }

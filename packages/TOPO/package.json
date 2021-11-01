@@ -10,11 +10,13 @@
     "build": "tsc & vite build"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "dependencies": {
     "@mapsrc/utils": "workspace:*",
     "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "@mapsrc/utils": "workspace:*"
   }
 }
