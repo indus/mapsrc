@@ -5,7 +5,7 @@ import mapstyle from "./mapstyle"
 
 import addSourceTypeFGB from "@mapsrc/fgb"
 import addSourceTypeGPBF from "@mapsrc/gpbf"
-import addSourceTypeTopo from "@mapsrc/topo"
+import addSourceTypeTOPO from "@mapsrc/topo"
 
 
 var map = new maplibregl.Map({
@@ -34,7 +34,6 @@ map.on("load", () => {
       'fgbProgressiv': .1,
       'fgbFilter': [[-100, 35], [-50, 55]]
     },
-    'layout': {},
     'paint': {
       'fill-color': '#0FD',
       'fill-opacity': 0.5
@@ -61,7 +60,6 @@ map.on("load", () => {
       'type': <'geojson'>'geobuf',
       'data': './data/de-counties.pbf'
     },
-    'layout': {},
     'paint': {
       'fill-color': '#FD0',
       'fill-opacity': 0.5
@@ -76,8 +74,10 @@ map.on("load", () => {
       'line-color': '#FD0'
     }
   });
+
+
   //TopoJSON
-  addSourceTypeTopo(map, () => { console.log("TOPO ready"); })
+  addSourceTypeTOPO(map, () => { console.log("TOPO ready"); })
 
   map.addLayer({
     'id': 'uk-counties',
@@ -87,7 +87,6 @@ map.on("load", () => {
       'data': './data/uk-counties.json',
       'topoFilter': "GBR_adm2"
     },
-    'layout': {},
     'paint': {
       'fill-color': '#D0F',
       'fill-opacity': 0.5

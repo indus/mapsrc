@@ -29,14 +29,14 @@ export const getSourceTypeTOPO = (map: Map): GeoJSONSourceClass =>
             } else if (data && (<any>data).type == "Topology") {
                 this._options.data = data;
 
-                let objects = this._options.topoFilter;
+                let object = this._options.topoFilter;
 
-                if (Array.isArray(objects))
-                    objects = { "type": "GeometryCollection", "geometries": objects.map(id => (<any>data).objects[id]) }
-                if (!objects)
-                    objects = { "type": "GeometryCollection", "geometries": Object.values((<any>data).objects) }
+                if (Array.isArray(object))
+                    object = { "type": "GeometryCollection", "geometries": object.map(id => (<any>data).objects[id]) }
+                if (!object)
+                    object = { "type": "GeometryCollection", "geometries": Object.values((<any>data).objects) }
 
-                var geojson = <GeoJSON.Feature | GeoJSON.FeatureCollection>topojson_decode(data, objects);
+                var geojson = <GeoJSON.Feature | GeoJSON.FeatureCollection>topojson_decode(data, object);
                 super.setData(geojson)
             } else {
                 console.error("TopoJSONSource expects a URL or a TopoJSON as 'data'")
