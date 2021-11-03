@@ -39,7 +39,9 @@ map.on("load", () => {
 });
 ```
 
-- `fgbProgressiv` will update the map in steps during downloads. A number between 0 and 1 will be taken as a percentage of the full feater count (e.g. 0.25 wil update the map when 25%, 50%, 75% and 100% of the features are downloaded). For a number greater than 1, the map gets updated each time that many new features are loaded.  
+- `fgbProgressiv` will update the map in steps during downloads.
+-- [0-1] will be taken as a percentage of the full feature count (e.g. `0.3` will update the map when 30%, 60%, 90% and 100% of the features are loaded).
+-- [>1] will be taken as feature count. (e.g. `30` will update the map when 30, 60, 90, ... and 100% of the features are loaded)
 - `fgbFilter` A spatial filter (see the [flatgeobuf example](https://flatgeobuf.org/examples/leaflet/filtered.html)). It takes a [min-max object](https://github.com/flatgeobuf/flatgeobuf/blob/master/examples/leaflet/filtered.html#L56-L61) as used by the flatgeobuf library or a maplibre/mapbox [LngLatBounds](https://docs.mapbox.com/mapbox-gl-js/api/geography/#lnglatbounds) object or array.
 
 ### Geobuffer
